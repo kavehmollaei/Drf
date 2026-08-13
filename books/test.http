@@ -1,0 +1,66 @@
+###
+GET http://127.0.0.1:8000/api/books/?q=ready
+content-type: application/json
+
+###
+GET http://127.0.0.1:8000/api/books/
+content-type: application/json
+
+###
+GET http://127.0.0.1:8000/api/books/4/
+content-type: application/json
+
+### 
+GET http://127.0.0.1:8000/api/books/latest
+Content-Type: application/json
+
+
+###
+POST http://127.0.0.1:8000/api/books/
+Content-Type: application/json
+
+{
+    "title": "test go to school",
+    "publisher":3,
+    "price": 4500,
+    "email":"kavehmollaei@gmail.com",
+    "author": 4,
+    "contributors": [7,4],
+    "BookMetadata":4
+
+}
+###
+GET http://127.0.0.1:8000/api/books/cheapBooks
+Content-Type: application/json
+
+
+###
+PUT http://127.0.0.1:8000/api/books/1/
+Content-Type: application/json
+
+{
+    "title": "Sea child morning approach report",
+    "author": "Jessica Edwards",
+    "publisher": 5,
+    "price" : 5000,
+    "metadata": 185,
+    "contributors": [
+      6,
+      11,
+      23
+    ]
+}
+
+###  
+POST http://127.0.0.1:8000/api/books/160/apply_discount/
+Content-Type: application/json
+
+{
+    "percent": 20
+}
+
+###
+GET http://127.0.0.1:8000/api/books/5
+content-type: application/json
+
+###
