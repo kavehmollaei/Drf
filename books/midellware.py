@@ -1,5 +1,5 @@
 #tarin middleware
-
+#sample 
 def my_middleware(get_response):
     def middleware(request):
         print("Before view")
