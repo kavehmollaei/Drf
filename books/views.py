@@ -98,3 +98,6 @@ class BookViewSet(ModelViewSet):
             'new_price': book.price,
             'discount_applied': f'{percent}%'
         }, status=status.HTTP_200_OK)
+        
+        
+# add comment
